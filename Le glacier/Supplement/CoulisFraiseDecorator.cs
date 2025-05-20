@@ -2,7 +2,7 @@
 
 public class CoulisFraiseDecorator : SupplementDecorator
 {
-    public CoulisFraiseDecorator(CoupeGlacee coupe) : base(coupe) { }
+    public CoulisFraiseDecorator(ICoupeGlacee coupe) : base(coupe) { }
 
     public override double Prix()
     {

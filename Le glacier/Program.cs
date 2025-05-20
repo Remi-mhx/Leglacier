@@ -17,12 +17,12 @@ class Program
             Console.Write("Votre choix (1 ou 2) : ");
             string choix = Console.ReadLine();
 
-            CoupeGlacee coupe = null;
+            ICoupeGlacee coupe = null;
 
             if (choix == "1")
-                coupe = new TripleChocolat();
+                coupe = TripleChocolat.Instance;
             else if (choix == "2")
-                coupe = new FruitsRouges();
+                coupe = FruitsRouges.Instance;
 
             if (coupe != null)
             {
@@ -51,6 +51,7 @@ class Program
                     }
 
                 }while (reponseSupplement != "n");
+                
                 commande.EnregistrerCommande(coupe);
             }
 

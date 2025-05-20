@@ -2,7 +2,7 @@
 
 public class NappageChocolatDecorator : SupplementDecorator
 {
-    public NappageChocolatDecorator(CoupeGlacee coupe) : base(coupe) { }
+    public NappageChocolatDecorator(ICoupeGlacee coupe) : base(coupe) { }
 
     public override double Prix()
     {

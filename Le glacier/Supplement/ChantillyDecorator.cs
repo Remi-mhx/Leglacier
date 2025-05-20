@@ -2,7 +2,7 @@
 
 public class ChantillyDecorator : SupplementDecorator
 {
-    public ChantillyDecorator(CoupeGlacee coupe) : base(coupe) { }
+    public ChantillyDecorator(ICoupeGlacee coupe) : base(coupe) { }
 
     public override double Prix()
     {

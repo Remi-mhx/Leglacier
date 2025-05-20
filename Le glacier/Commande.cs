@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 public class Commande
 {
-    private List<CoupeGlacee> _coupesGlacees = new List<CoupeGlacee>();
+    private List<ICoupeGlacee> _coupesGlacees = new List<ICoupeGlacee>();
 
-    public void EnregistrerCommande(CoupeGlacee coupe)
+    public void EnregistrerCommande(ICoupeGlacee coupe)
     {
         _coupesGlacees.Add(coupe);
     }
